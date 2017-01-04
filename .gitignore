@@ -1,0 +1,9 @@
+node_modules/
+build/
+coverage/
+.eslintcache
+.idea/
+team-config
+npm-debug.log
+target
+.DS_Store
