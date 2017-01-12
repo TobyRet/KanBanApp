@@ -15,6 +15,7 @@ export default (state, actions) => {
 //
 // See *AltContainer* and *connect-alt* for optimized solutions.
 function connect(state = () => {}, actions = {}, target) {
+
   class Connect extends React.Component {
     componentDidMount() {
       const {flux} = this.context
@@ -38,7 +39,7 @@ function connect(state = () => {}, actions = {}, target) {
       this.forceUpdate()
     }
   }
-  Connect.connectTypes = {
+  Connect.contextTypes = {
     flux: React.PropTypes.object.isRequired
   }
 
